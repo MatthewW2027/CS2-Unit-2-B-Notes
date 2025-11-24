@@ -41,5 +41,27 @@ public class Main {
          }
       }
 
+      // LOOPS & STRINGS 
+      // Use a loop to iterate through each character in a string object (TRAVERSAL)
+
+      // Use a FOR loop to "visit every char" 
+      String name = "matthew"; 
+      int finalIndex = name.length(); 
+      System.out.println("Final Index: " + finalIndex); 
+
+      // build a reversed String using loop 
+      String reversed = "";
+      for (int i = finalIndex - 1; i >= 0; i--) {
+         System.out.println("Current Index: " + i); 
+         String currentLetter = name.substring(i, i+1); // char at index 
+         System.out.println(currentLetter); 
+         reversed += currentLetter; // add char to reversed name 
+      }
+      System.out.println("Your name backwards: " + reversed); 
+
+      // WHILE loops can handle tasks other than when you know how many times to iterate 
+      // EX) Find & replace characters until all are replaced 
+      
+
    } // END MAIN METHOD 
 } // END CLASS 
